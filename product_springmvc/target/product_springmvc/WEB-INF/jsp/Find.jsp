@@ -8,7 +8,7 @@
 <body>
 
 <div id="global">
-    <form action="product" >
+    <form action="product-find" method="get">
         <fieldset>
             <legend>Find Product</legend>
 

@@ -7,6 +7,7 @@ import edu.mum.domain.Product;
  public interface ProductService   {
 	
 	public List<Product> getAll();
+	public Product getProductById(long i);
 	
 	public void save(Product product);
 	

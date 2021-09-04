@@ -35,8 +35,13 @@ import edu.mum.repository.ProductRepository;
 		public List<Product> getAll() {
 			return listOfProducts;
 		}
-	
-		@Override
+
+	@Override
+	public Product getProductById(long id) {
+		return listOfProducts.stream().filter(p->p.getId() == id).findFirst().get();
+	}
+
+	@Override
 		public void save(Product product) {
 			listOfProducts.add(product);
 			return ;
